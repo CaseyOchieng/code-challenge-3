@@ -186,7 +186,9 @@ function getMovies() {
   for (let i of movies) {
    
     const content = `
-  <div class="card">
+  
+  <nav class="Hands">F</nav>
+    <div class="card">
   <div class="card-header" id="heading">
     <h5 class="mb-0">   
     </h5>
@@ -196,13 +198,12 @@ function getMovies() {
 
       <h5>${i.title}</h5>
       <p>${i.description}</p>
-      <p>[Time]:${i.showtime}</p>
-      <p>[Capacity]: ${i.capacity}</p>
-      <p>[tickets_sold] :${i.tickets_sold}</p>
+      <p>${i.showtime}</p>
+      <p>${i.capacity}</p>
       <img src=${i.poster} width="200px" height="200px">
       <br> 
       <br>
-      <div id="pro" >
+      <div class="pro" >
       <button class="btn btn-link" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">
               BOOK TICKET
       </button>
@@ -215,23 +216,7 @@ function getMovies() {
 </div>
 `;
 
-
-document.getElementById("circle").onclick = function() {
-  document.getElementById("circle").style.display = "none";
-}
-
-document.getElementById("rounded").onclick = function() {
-  document.getElementById("rounded").style.display = "none";
-}
-
-// document.getElementById("square").onclick = function() {
-//   document.getElementById("square").style.display = "none";
-}
-
-
-
-
-    // Append newyly created card element to the container
+    // Append newly created card element to the container
     list.innerHTML += content;
   }
 }
