@@ -8,7 +8,6 @@ theater.
 
 Use this gif as an example of how the app should work.
 
-![Flatdango App Demo](https://curriculum-content.s3.amazonaws.com/phase-1/phase-1-code-challenge-flatdango/flatdango-demo.gif)
 
 > To view in VSCode, right click on the README.md file and select "Open Preview".
 
