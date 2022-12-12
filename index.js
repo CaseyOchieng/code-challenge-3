@@ -215,6 +215,18 @@ function getMovies() {
   </div>
 </div>
 `;
+// hiding the unbook button
+function showElement() {
+  element = document.querySelector('.container');
+  element.style.visibility = 'visible';
+}
+
+function hideElement() {
+  element = document.querySelector('.container');
+  element.style.visibility = 'hidden';
+}
+
+
 
     // Append newly created card element to the container
     list.innerHTML += content;
