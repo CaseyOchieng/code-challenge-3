@@ -15,7 +15,7 @@ To use this repo on your machine requires some simple steps
 - Open a terminal / command line interface on your computer
 - Clone the repo by using the following:
 
-        git clone https://github.com/Feisalbireh/Code-Challenge.git
+        git clone https://github.com/caseyochieng/Code-Challenge-3.git
 
 - Change directory to the repo folder:
 
@@ -39,9 +39,11 @@ To use this repo on your machine requires some simple steps
 Running this is very straight forward
 
 Open the index.html file to be able to access the application.
-Once the application is opened, you can use the following :
+Once the application is opened, you can use the following steps to navigate through :
 
-*The user will be shown a list of movie titles and their details
+- The user will be shown a list of movie titles and their details which the user can interact with.
+
+- The user can book for spaces and movies by clicking on the ```Book ticket``` button or unbook by clicking on the ```unbook ticket``` button.
 
 
 # Author
