@@ -188,20 +188,28 @@ function getMovies() {
     const content = `
   <div class="card">
   <div class="card-header" id="heading">
-    <h5 class="mb-0">
-      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">
-         Buy Ticket
-              </button>
+    <h5 class="mb-0">   
     </h5>
   </div>
-
-  <div id="collapse" class="collapse show" aria-labelledby="heading" data-parent="#accordion">
+ <div id="collapse" class="collapse show" aria-labelledby="heading" data-parent="#accordion">
     <div class="card-body">
 
       <h5>${i.title}</h5>
       <p>${i.description}</p>
-      <p>${i.showtime}</p>
-      <img src=${i.poster} alt="" height="80">
+      <p>[Time]:${i.showtime}</p>
+      <p>[Capacity]: ${i.capacity}</p>
+      <p>[tickets_sold] :${i.tickets_sold}</p>
+      <img src=${i.poster} width="200px" height="200px">
+      <br> 
+      <br>
+      <div id="pro" >
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">
+              BOOK TICKET
+      </button>
+              <br>
+              <br>
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">UNBOOK TICKET</button>        
+      </div>
     </div>
   </div>
 </div>
@@ -211,6 +219,8 @@ function getMovies() {
     list.innerHTML += content;
   }
 }
+
+
 
 async function readJson() {
   let res = await fetch("./db.json");
