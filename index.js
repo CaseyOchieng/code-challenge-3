@@ -197,9 +197,9 @@ function getMovies() {
     <div class="card-body">
 
       <h5>${i.title}</h5>
-      <p>${i.description}</p>
-      <p>${i.showtime}</p>
-      <p>${i.capacity}</p>
+      <p>[Description] :${i.description}</p>
+      <p>[Time]:${i.showtime}</p>
+      <p>[Capacity]${i.capacity}</p>
       <img src=${i.poster} width="200px" height="200px">
       <br> 
       <br>
@@ -215,15 +215,15 @@ function getMovies() {
   </div>
 </div>
 `;
-// hiding the unbook button
-function showElement() {
-  element = document.querySelector('.container');
-  element.style.visibility = 'visible';
-}
 
+function showElement() {
+  element = document.querySelector('.');
+  element.style.display = 'block';  
+}
+// hiding the unbook button
 function hideElement() {
   element = document.querySelector('.container');
-  element.style.visibility = 'hidden';
+  element.style.display = 'none';
 }
 
 
