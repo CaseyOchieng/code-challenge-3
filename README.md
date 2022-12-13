@@ -19,7 +19,7 @@ To use this repo on your machine requires some simple steps
 
 - Change directory to the repo folder:
 
-        cd Code-Challenege
+        cd Code-Challenge-3
 
 - (Optional) Open it in ``Visual Studio Code``
 
@@ -32,7 +32,7 @@ To use this repo on your machine requires some simple steps
 - Take on the process in ``Alternative One`` above.
 - Remember to replace your username when cloning.
 
-        git clone https://github.com/your-username-here/Code-Challenge.git
+        git clone https://github.com/your-username-here/Code-Challenge-3.git
 
 # Running the application 
 

@@ -209,22 +209,27 @@ function getMovies() {
       </button>
               <br>
               <br>
-      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">UNBOOK TICKET</button>        
+      <button class="btn btn-unlink" data-toggle="collapse" data-target="#collapse" aria-expanded="true" aria-controls="collapse">UNBOOK TICKET</button>        
       </div>
     </div>
   </div>
 </div>
 `;
-
+// hiding the unbook button
 function showElement() {
-  element = document.querySelector('.');
+  element = document.querySelector('.btn btn-link');
   element.style.display = 'block';  
 }
-// hiding the unbook button
+
 function hideElement() {
-  element = document.querySelector('.container');
+  element = document.querySelector('.btn btn-unlink');
   element.style.display = 'none';
 }
+// hiding the book button
+
+
+
+
 
 
 
