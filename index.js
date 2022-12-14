@@ -1,9 +1,9 @@
 function getMovies() {
   let list = document.getElementById("movie-list");
-  fetch(" http://localhost:3000/films")
+  fetch("https://code-challenge-3-nine.vercel.app/db.json")
   .then(res => res.json())
   .then(data =>{
-    data.map(movie =>{
+    data.films.map(movie =>{
 const content = `
   
   <nav class="Hands"></nav>
